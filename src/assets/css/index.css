@@ -62,13 +62,11 @@ header {
 
 .gallery {
   background: #f7f7f7;
-  width: 81%;
   margin: 50px 10%;
   border-radius: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  flex: 3;
   gap: 50px;
   padding: 50px;
 }
