@@ -1,0 +1,23 @@
+$color-primary : #FF6060;
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: white;
+    font-family: 'Monserrat', sans-serif;
+  }
+  li {
+    list-style-type: none;
+    color:  $color-primary;
+  }

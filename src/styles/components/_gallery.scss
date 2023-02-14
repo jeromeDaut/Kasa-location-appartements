@@ -1,0 +1,33 @@
+.gallery{
+    background: #f7f7f7;
+    margin: 50px 10%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+    .card{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        background: linear-gradient(180deg, $color-primary 0%, rgba(0, 0, 0, 0.5) 150%);
+        h3{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 60%;
+            font-size: 18px;
+            line-height: 25.67px;
+            color: white;
+        }
+        img{
+            object-fit: cover;
+            gap: 50px;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+    }
+}

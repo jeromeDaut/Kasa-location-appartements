@@ -1,0 +1,14 @@
+.navigation ul{
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+    font-weight: 500px;
+    li{
+
+        color: $color-primary;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+}
