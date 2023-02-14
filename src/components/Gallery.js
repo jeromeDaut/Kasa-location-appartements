@@ -1,13 +1,29 @@
-import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const Gallery = () => {
-  // axios
+  const [data, setData] = useState([]);
+
   useEffect(() => {
-    axios.get("/logements.json").then((res) => console.log(res.data));
+    fetch("/logements.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
   }, []);
 
-  return <div className="gallery"></div>;
+  return (
+    <section className="gallery">
+      {data.map((item) => (
+        <NavLink
+          to={`/accommodation/${item.id}`}
+          className="card"
+          key={item.id}
+        >
+          <img src={item.cover} alt={item.title} />
+          <h3>{item.title}</h3>
+        </NavLink>
+      ))}
+    </section>
+  );
 };
 
 export default Gallery;
