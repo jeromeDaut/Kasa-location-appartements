@@ -1,12 +1,16 @@
 import React from "react";
-import BannerImg from "../components/BannerImg";
+import BannerHome from "../components/BannerHome";
+import Footer from "../components/Footer";
+import Gallery from "../components/Gallery";
 import Logo from "../components/Logo";
 
 const Home = () => {
   return (
     <div>
       <Logo />
-      <BannerImg />
+      <BannerHome />
+      <Gallery />
+      <Footer />
     </div>
   );
 };
