@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: "Monserrat", sans-serif;
+}
+
+li {
+  list-style-type: none;
+  color: #FF6060;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 10%;
+  margin-bottom: 50px;
+}
+
+.bannerHome {
+  display: flex;
+  width: auto;
+  height: 223px;
+  position: relative;
+  margin: 50px 10%;
+  margin-bottom: 100px;
+}
+.bannerHome img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 25px;
+}
+.bannerHome h1 {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  justify-content: center;
+  color: white;
+  font-size: 50px;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 50px;
+  font-size: 24px;
+  font-weight: 500px;
+}
+.navigation ul li {
+  color: #FF6060;
+}
+.navigation ul a {
+  text-decoration: none;
+}
+
+.gallery {
+  background: #f7f7f7;
+  width: 81%;
+  margin: 50px 10%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 3;
+  gap: 50px;
+  padding: 50px;
+}
+.gallery .card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 150%);
+}
+.gallery .card h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 60%;
+  font-size: 18px;
+  line-height: 25.67px;
+  color: white;
+}
+.gallery .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  gap: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  background: black;
+  text-align: center;
+  padding: 60px 30px;
+}
+footer img {
+  margin: auto;
+}
+footer p {
+  color: white;
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FF6060;
+}
+.error h1 {
+  font-size: 288px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+.error p {
+  font-size: 36px;
+  margin-bottom: 180px;
+}
+.error a {
+  font-size: 18px;
+  color: #FF6060;
+}/*# sourceMappingURL=index.css.map */
