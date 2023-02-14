@@ -1,11 +1,11 @@
 import React from "react";
-import img from "../assets/images/logo.png";
+import logo from "../assets/Images/LOGO.png";
 import Navigation from "./Navigation";
 
 const Logo = () => {
   return (
-    <header className="logo">
-      <img src={img} alt="Logo de kaza" />
+    <header className="header">
+      <img src={logo} alt="Logo de kaza" />
       <Navigation />
     </header>
   );
