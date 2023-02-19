@@ -7,7 +7,7 @@ import arrowRight from "../assets/Images/arrow_right.png";
 const Carousel = () => {
   //
   const [index, setIndex] = useState(0);
-  const [route, setRoute] = useState(/accommodation/ + data.id);
+  const [route, setRoute] = useState(`/accommodation/${data.id}`);
   const length = data.length;
 
   const CoverPrevious = () => {
@@ -48,6 +48,7 @@ const Carousel = () => {
         />
       </NavLink>
       <img src={data[index].cover} alt={data.title} />
+      <p>{index + 1 + "/" + data.length}</p>
     </div>
   );
 };
