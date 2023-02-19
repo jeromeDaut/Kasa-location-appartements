@@ -3,12 +3,11 @@
     gap: 50px;
     font-size: 24px;
     font-weight: 500px;
-    li{
-
-        color: $color-primary;
-    }
     a{
         text-decoration: none;
+        color: $color-primary;
+        &.active{
+            text-decoration: underline;
+        }
     }
-    
 }

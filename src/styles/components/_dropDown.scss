@@ -1,0 +1,57 @@
+.dropDown{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 10%;
+
+  &__container{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    &--btn {
+      background-color: $color-primary;
+      // display: flex;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 80%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      border-radius: 10px;
+      //  &::before{
+        //     content: '';
+        
+        //  }
+        &:after{
+          // content: url('/src/assets/Images/arrow_down.png');
+          color: white;
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+        }
+      }
+      
+      //   .active {
+        //     background-color: #555;
+        //     &::after{
+          //         content: "\2212";
+          
+          //     }
+          //   }
+          
+          
+          &--article {
+            width: 80%;
+            justify-content: center;
+            border-radius: 0 0 10px 10px;
+            // padding: 0 18px;
+          // max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          background-color: #f1f1f1;
+        }
+      }
+    }
