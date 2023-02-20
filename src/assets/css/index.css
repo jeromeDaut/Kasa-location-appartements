@@ -28,7 +28,6 @@ header {
   height: 223px;
   position: relative;
   margin: 50px 10%;
-  margin-bottom: 100px;
 }
 .bannerHome img {
   -o-object-fit: cover;
@@ -144,6 +143,7 @@ footer {
   background: black;
   text-align: center;
   padding: 60px 30px;
+  margin-top: 150px;
 }
 footer img {
   margin: auto;
@@ -176,40 +176,25 @@ footer p {
 }
 
 .dropDown {
-  display: flex;
-  width: 90%;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 50px 10%;
-}
-.dropDown__container {
-  display: flex;
-  width: 500px;
-  flex-direction: column;
-}
-.dropDown__container--btn {
+  border-radius: 4px;
+  margin: 50px auto;
   background-color: #FF6060;
   color: white;
+  width: 65%;
+}
+.dropDown__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
   cursor: pointer;
-  padding: 18px;
-  width: 80%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  border-radius: 10px;
-}
-.dropDown__container--btn:after {
-  color: white;
   font-weight: bold;
-  float: right;
-  margin-left: 5px;
 }
-.dropDown__container--article {
-  width: 80%;
-  justify-content: center;
-  border-radius: 0 0 10px 10px;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+.dropDown__title {
+  margin: 0;
+}
+.dropDown__content {
+  padding: 10px;
+  background: #F6F6F6;
+  color: #FF6060;
 }/*# sourceMappingURL=index.css.map */
