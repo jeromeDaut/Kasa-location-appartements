@@ -5,19 +5,22 @@ import arrowLeft from "../assets/Images/arrow_back.png";
 import arrowRight from "../assets/Images/arrow_right.png";
 
 const Carousel = () => {
-  //
+  //Declare state variables for the current indes and route
   const [index, setIndex] = useState(0);
   const [route, setRoute] = useState(`/accommodation/${data.id}`);
   const length = data.length;
-
+  //function to go to the previous index
   const CoverPrevious = () => {
     const newIndex = index - 1;
     const newRoute = `/accommodation/${
       data[newIndex < 0 ? length - 1 : newIndex].id
     }`;
-    setIndex(newIndex < 0 ? length - 1 : newIndex);
-    setRoute(newRoute);
+
+    setIndex(newIndex < 0 ? length - 1 : newIndex); //Set new index,looping to the end
+    setRoute(newRoute); //Set the new route
   };
+
+  //function to go to the next index
   const CoverNext = () => {
     const newIndex = index + 1;
     const newRoute = `/accommodation/${
