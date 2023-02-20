@@ -1,19 +1,39 @@
-import React from "react";
-import { data } from "../data/logements";
+import React, { useState } from "react";
+import arrowUp from "../assets/Images/arrow_up.png";
+import arrowDown from "../assets/Images/arrow_down.png";
+import { dropDownData } from "../data/dropDownDataAbout";
 
-const Collapsible = () => {
+const DropDown = ({ title, paragraph }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <section className="dropDown">
-      {data.map((item) => (
-        <div key={item.id} className="dropDown__container">
-          <button className="dropDown__container--btn">{item.title}</button>
-          <article className="dropDown__container--article">
-            <p>{item.description}</p>
-          </article>
+    <section>
+      <article className="dropDown">
+        <div className="dropDown__header" onClick={toggleOpen}>
+          <h3 className="dropDown__title">{title}</h3>
+          {isOpen ? (
+            <img src={arrowUp} alt="fermé" />
+          ) : (
+            <img src={arrowDown} alt="ouvert" />
+          )}
         </div>
-      ))}
+        {isOpen && <p className="dropDown__content">{paragraph}</p>}
+      </article>
     </section>
   );
 };
+const DropDownList = () => {
+  return (
+    <div>
+      {dropDownData.map((data, index) => (
+        <DropDown key={index} title={data.title} paragraph={data.paragraph} />
+      ))}
+    </div>
+  );
+};
 
-export default Collapsible;
+export default DropDownList;
