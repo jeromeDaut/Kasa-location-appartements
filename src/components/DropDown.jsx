@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import arrowUp from "../assets/Images/arrow_up.png";
 import arrowDown from "../assets/Images/arrow_down.png";
-import { dropDownData } from "../data/dropDownDataAbout";
 
 const DropDown = ({ title, paragraph }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +25,5 @@ const DropDown = ({ title, paragraph }) => {
     </section>
   );
 };
-const DropDownList = () => {
-  return (
-    <div>
-      {dropDownData.map((data, index) => (
-        <DropDown key={index} title={data.title} paragraph={data.paragraph} />
-      ))}
-    </div>
-  );
-};
 
-export default DropDownList;
+export default DropDown;
