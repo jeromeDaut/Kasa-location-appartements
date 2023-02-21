@@ -1,7 +1,9 @@
 import React from "react";
-import Carousel from "../components/Carousel";
-import DropDown from "../components/DropDown";
+import DropDownList from "../components/DropDown";
+import Footer from "../components/Footer";
 import Logo from "../components/Header";
+import InfoAccommadation from "../components/InfoAccommadation";
+import Slideshow from "../components/Slideshow";
 
 const Accommodation = () => {
   return (
@@ -9,9 +11,13 @@ const Accommodation = () => {
       <Logo />
 
       <main>
-        <Carousel />
-        <DropDown />
+        <Slideshow />
+        <section>
+          <InfoAccommadation />
+        </section>
+        <DropDownList />
       </main>
+      <Footer />
     </>
   );
 };
