@@ -9,8 +9,10 @@ const BannerImg = () => {
   const showTitle = isHomePage;
 
   return (
-    <div className="bannerHome bannerHome__overlay">
-      <img src={isHomePage ? imgHome : imgAbout} alt="Banner_image" />
+    <div className="bannerHome">
+      <div className=" bannerHome__overlay">
+        <img src={isHomePage ? imgHome : imgAbout} alt="Banner_image" />
+      </div>
       {showTitle && (
         <h1 className="mainTitle">Chez vous, partout et ailleurs</h1>
       )}
