@@ -1,5 +1,4 @@
 .dropDown{
-  // border: 1px solid #ccc;
   border-radius: 4px;
   margin: 50px auto;
   background-color: $color-primary;
@@ -11,7 +10,7 @@
       justify-content: space-between;
       padding: 10px;
       cursor: pointer;
-      // user-select: none;
+      // user-select: none;       
       font-weight: bold;
     }
     &__title{
