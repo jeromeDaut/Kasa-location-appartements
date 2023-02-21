@@ -1,0 +1,21 @@
+.info{
+    color: $color-primary;
+    margin: 10px 10%;
+    
+    &__title{
+        font-size: 36px;
+        line-height: 51px;
+        font-weight: 500;
+    }
+    &__location{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    &__tag{
+        color: white;
+        background-color: $color-primary;
+        border-radius: 25px;
+        padding: 5px 50px;
+        margin: 20px 10px 20px 0;
+    }
+}
