@@ -14,7 +14,10 @@ const BannerImg = () => {
         <img src={isHomePage ? imgHome : imgAbout} alt="Banner_image" />
       </div>
       {showTitle && (
-        <h1 className="mainTitle">Chez vous, partout et ailleurs</h1>
+        <h1 className="mainTitle">
+          Chez vous,
+          <br className="br" /> partout et ailleurs
+        </h1>
       )}
     </div>
   );
