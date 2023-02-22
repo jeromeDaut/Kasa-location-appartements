@@ -2,7 +2,7 @@ export const dropDownData = [
   {
     title: "Fiabilité",
     paragraph:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur assumenda porro asperiores corporis amet soluta dicta, eligendi consequuntur in laudantium omnis, culpa minima, accusantium atque sit facere quisquam fugiat! Repudiandae tenetur nesciunt deserunt totam illum doloremque sed quisquam harum quae?",
+      "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.",
   },
   {
     title: "Respect",
@@ -12,11 +12,11 @@ export const dropDownData = [
   {
     title: "Service",
     paragraph:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur assumenda porro asperiores corporis amet soluta dicta, eligendi consequuntur in laudantium omnis, culpa minima, accusantium atque sit facere quisquam fugiat! Repudiandae tenetur nesciunt deserunt totam illum doloremque sed quisquam harum quae?",
+      "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
   },
   {
     title: "Responsabilité",
     paragraph:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur assumenda porro asperiores corporis amet soluta dicta, eligendi consequuntur in laudantium omnis, culpa minima, accusantium atque sit facere quisquam fugiat! Repudiandae tenetur nesciunt deserunt totam illum doloremque sed quisquam harum quae?",
+      "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
   },
 ];
