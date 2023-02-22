@@ -1,0 +1,142 @@
+@media screen and (max-width: 768px){
+    // HOMEPAGE:
+    main{
+        margin: 20px 20px;
+
+    }
+    header{
+        width: 80%;
+        margin: 20px auto 0;
+        img{
+            width: 145px;
+        }
+        .navigation ul{
+            font-size: 11px;
+            gap: 10%;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+    }
+    .bannerHome{
+        margin: 20px 0;
+        width: 100%;
+        height: 110px;
+        &__overlay{
+            border-radius: 10px;
+
+        }
+        img{
+            border-radius: 10px;
+            height: 110px;
+        }
+        h1{
+            font-size: 24px;
+            width: 100%;
+            top: 25%;
+            right: 10%;
+            font-weight: 500;
+            text-align: left;
+            .br{
+                display: block;
+            }
+        }
+    }
+    .gallery{
+        background: none;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+         .card{
+            width: 100%;
+            height: 255px;
+         }
+    }
+    footer{
+        margin: 0;
+        p{
+
+            font-size: 12px;
+        }
+    }
+    // ABOUT:
+    .dropDown{
+        width: 100%;
+        font-size: 13px;
+        &__header{
+            margin-top: -20px;
+            height: 30px;
+            img{
+                width: 15px;
+            }
+
+        }
+    }
+    // ACCOMMODATION:
+    .carousel{
+        width: 100%;
+        height: 255px;
+        margin: 0 auto;
+        background: black;
+        border-radius: 25px;
+        img{
+            width: 100%;
+            height: 255px;
+            opacity: 0.90;
+        }
+        .arrowRight{
+            width: 11px;
+            height: 20px;
+        }
+    }
+    .sectionInfo{
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        &__title{
+            // text-align: start;
+            font-size: 18px;
+            font-weight: 500;
+            width: 100%;
+        }
+        &__location{
+            font-size: 14px;
+        }
+        &__tag{
+            padding: 5px 10px;
+            font-size: 10px;
+        }
+    }
+    .containerHost{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 20px 0;
+        .host{
+            justify-content: flex-end;
+            h3{
+                font-size: 12px;
+                font-weight: 500;
+            }
+            img{
+                width: 32px;
+            }
+        }
+        .rating{
+            display: flex;
+            width: 15px;
+            height: 15px;
+            gap: 5px;
+        }
+    }
+    .dropDownAccommodation{
+        display: block;
+        width: 100%;
+        .dropDown__header{
+            font-size: 13px;
+        }
+    }
+}
