@@ -45,39 +45,34 @@ const Accommodation = () => {
     console.log("no state");
   }
   return (
-    <>
-      <main>
-        <Slideshow slidesList={slides} />
-        <section>
-          <InfoAccommadation
-            title={title}
-            tags={tags}
-            location={logLocation}
-            rating={rating}
-            name={name}
-            picture={picture}
-          />
-          {/* <Rating /> */}
-        </section>
+    <main>
+      <Slideshow slidesList={slides} />
 
-        <section className="dropDownAccommodation">
-          <>
-            <DropDown
-              key="0"
-              title="description"
-              content={description}
-              isList={true}
-            />
-            <DropDown
-              key="1"
-              title="equipements"
-              content={equipments}
-              isList={true}
-            />
-          </>
-        </section>
-      </main>
-    </>
+      <InfoAccommadation
+        title={title}
+        tags={tags}
+        location={logLocation}
+        rating={rating}
+        name={name}
+        picture={picture}
+      />
+      {/* <Rating /> */}
+
+      <section className="dropDownAccommodation">
+        <DropDown
+          key="0"
+          title="description"
+          content={description}
+          isList={false}
+        />
+        <DropDown
+          key="1"
+          title="equipements"
+          content={equipments}
+          isList={true}
+        />
+      </section>
+    </main>
   );
 };
 
