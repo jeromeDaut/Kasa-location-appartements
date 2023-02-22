@@ -8,6 +8,7 @@
         width: 100%;
          z-index: 0;    
          background: black;   
+         border-radius: 25px;
         img{
             object-fit:cover;
             width:100%;
@@ -26,6 +27,11 @@
         color: white;
         font-size: 50px;
         z-index: 3;
+        .br{
+            display: none;
+        }
+        
+        // white-space: nowrap;
     }
         
 }
