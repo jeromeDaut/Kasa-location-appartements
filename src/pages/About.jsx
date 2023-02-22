@@ -1,30 +1,25 @@
 import React from "react";
 import BannerImg from "../components/BannerImg";
 import DropDown from "../components/DropDown";
-import Footer from "../components/Footer";
-import Logo from "../components/Header";
+
 import { dropDownData } from "../data/dropDownDataAbout";
 
-const DropDownList = ({ data }) => {
+const DropDownAbout = ({ data }) => {
   return (
-    <div>
+    <section>
       {data.map((item, index) => (
-        <DropDown key={index} title={item.title} paragraph={item.paragraph} />
+        <DropDown key={index} title={item.title} content={item.paragraph} />
       ))}
-    </div>
+    </section>
   );
 };
 
 const About = () => {
   return (
-    <div>
-      <Logo />
-      <main>
-        <BannerImg />
-        <DropDownList data={dropDownData} />
-      </main>
-      <Footer />
-    </div>
+    <main>
+      <BannerImg />
+      <DropDownAbout data={dropDownData} />
+    </main>
   );
 };
 
