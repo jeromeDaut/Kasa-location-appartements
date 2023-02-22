@@ -41,6 +41,7 @@ header {
   height: 223px;
   border-radius: 25px;
   z-index: -1;
+  opacity: 0.75;
 }
 .bannerHome h1 {
   display: flex;
@@ -75,7 +76,7 @@ header {
 }
 .carousel p {
   position: absolute;
-  font-size: 40px;
+  font-size: 18px;
   color: white;
   z-index: 3;
   bottom: 20px;
@@ -141,6 +142,7 @@ header {
   width: 300px;
   height: 300px;
   border-radius: 10px;
+  opacity: 0.75;
 }
 
 footer {
@@ -194,6 +196,7 @@ footer p {
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
+  height: auto;
 }
 .dropDown__title {
   margin: 0;
@@ -204,9 +207,15 @@ footer p {
   color: #FF6060;
 }
 
+.sectionInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px 10%;
+}
+
 .info {
   color: #FF6060;
-  margin: 10px 10%;
 }
 .info__title {
   font-size: 36px;
@@ -223,4 +232,27 @@ footer p {
   border-radius: 25px;
   padding: 5px 50px;
   margin: 20px 10px 20px 0;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.host h3 {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  width: -moz-min-content;
+  width: min-content;
+  text-align: end;
+}
+.host img {
+  border-radius: 100%;
+  width: 64px;
+}
+
+.rating {
+  margin-top: 15px;
 }/*# sourceMappingURL=index.css.map */
