@@ -1,47 +1,39 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { data } from "../data/logements";
+// import { slidesList } from "../slidesList/logements";
 import arrowLeft from "../assets/Images/arrow_back.png";
 import arrowRight from "../assets/Images/arrow_right.png";
 
-const Slideshow = () => {
+const Slideshow = ({ slidesList }) => {
   //Declare state variables for the current index
   const [index, setIndex] = useState(0);
-  const length = data.length;
+  const length = slidesList.length;
+  const currentSlide = slidesList[index];
   //function to go to the previous index
-  const CoverPrevious = () => {
-    const newIndex = index - 1;
-    setIndex(newIndex < 0 ? length - 1 : newIndex); //Set new index,looping to the end
-  };
-
-  //function to go to the next index
-  const CoverNext = () => {
-    const newIndex = index + 1;
-    setIndex(newIndex >= length ? 0 : newIndex);
-  };
 
   return (
     <div className="carousel">
-      <NavLink to={/accommodation/ + data[index].id}>
-        <img
-          src={arrowLeft}
-          alt="fleche location précédente"
-          onClick={CoverPrevious}
-          className="arrowLeft"
-          key={data.id}
-        />
-      </NavLink>
+      <img
+        src={arrowLeft}
+        alt="fleche location précédente"
+        onClick={() => {
+          index === 0 ? setIndex(slidesList.length - 1) : setIndex(index - 1);
+        }}
+        className="arrowLeft"
+        key={slidesList.id}
+        loading="lazy"
+      />
 
-      <NavLink to={/accommodation/ + data[index].id}>
-        <img
-          src={arrowRight}
-          alt="fleche location suivante"
-          onClick={CoverNext}
-          className="arrowRight"
-        />
-      </NavLink>
+      <img
+        src={arrowRight}
+        alt="fleche location suivante"
+        onClick={() => {
+          index === slidesList.length - 1 ? setIndex(0) : setIndex(index + 1);
+        }}
+        className="arrowRight"
+        loading="lazy"
+      />
 
-      <img key={data[index].id} src={data[index].cover} alt={data.title} />
+      <img src={currentSlide} alt={currentSlide} loading="lazy" />
       <p>{index + 1 + "/" + length}</p>
     </div>
   );
