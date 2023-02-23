@@ -7,16 +7,16 @@
     
     
     
-    .info{
-        color: $color-primary;
-        
-        &__title{
-            font-size: 36px;
-            line-height: 51px;
-            font-weight: 500;
-        }
-        &__location{
-            font-size: 18px;
+.info{
+    color: $color-primary;
+    
+    &__title{
+        font-size: 36px;
+        line-height: 51px;
+        font-weight: 500;
+    }
+    &__location{
+        font-size: 18px;
         margin-bottom: 20px;
     }
     &__tag{
@@ -25,27 +25,30 @@
         border-radius: 25px;
         padding: 5px 50px;
         margin: 20px 10px 20px 0;
+        white-space: nowrap;
+        
     }
 }
 .host{
-display: flex;
-align-items: center;
-justify-content: flex-end;
-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
     h3{
-    color: $color-primary;
-    font-size: 18px;
-    font-weight: 500;
-    width: min-content;
-    text-align: end;
+        color: $color-primary;
+        font-size: 18px;
+        font-weight: 500;
+        width: min-content;
+        text-align: end;
     }
-
+    
     img{
-    border-radius: 100%;
-    width: 64px;
-
+        border-radius: 100%;
+        width: 64px;
+        
     }
 }
 .rating{
     margin-top: 15px;
+    white-space: nowrap;
 }
