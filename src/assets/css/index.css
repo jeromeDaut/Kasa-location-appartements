@@ -6,7 +6,7 @@
 
 body {
   background: white;
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 li {
@@ -208,6 +208,9 @@ footer p {
   justify-content: space-between;
   padding: 10px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   font-weight: bold;
   height: auto;
 }
@@ -257,6 +260,7 @@ footer p {
   border-radius: 25px;
   padding: 5px 50px;
   margin: 20px 10px 20px 0;
+  white-space: nowrap;
 }
 
 .host {
@@ -280,9 +284,10 @@ footer p {
 
 .rating {
   margin-top: 15px;
+  white-space: nowrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   main {
     margin: 20px 20px;
   }
@@ -378,6 +383,7 @@ footer p {
     font-size: 18px;
     font-weight: 500;
     width: 100%;
+    line-height: 25px;
   }
   .info__location {
     font-size: 14px;
@@ -385,6 +391,7 @@ footer p {
   .info__tag {
     padding: 5px 10px;
     font-size: 10px;
+    margin-right: 2px;
   }
   .containerHost {
     width: 100%;
