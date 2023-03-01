@@ -1,36 +1,7 @@
-// import React from "react";
-// import starEmpty from "../assets/Images/starEmpty.svg"
-// // import starEmpty from "../assets/Images/starEmpty.svg";
-// // import starFilled from "../assets/Images/starFilled.svg";
-// const InfoAccommadation = ({ title, location, tags, name, picture}) => {
-//   return (
-//     <section>
-//       <div className="info">
-//         <h3 className="info__title">{title}</h3>
-//         <p className="info__location">{location}</p>
-//         <div className="info__tags">
-//           {tags.map((tag) => (
-//             <span key={tag} className="info__tag">
-//               {tag}
-//             </span>
-//           ))}
-//         </div>
-//         <div className="host">
-//           <span>{name}</span>
-//           <img src={picture} alt={name} />
-//         </div>
-//         <div className="rating">
 
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default InfoAccommadation;
 import React from "react";
-import starEmpty from "../assets/Images/starEmpty.svg";
-import starFilled from "../assets/Images/starFilled.svg";
+import starEmpty from "../../assets/Images/starEmpty.svg";
+import starFilled from "../../assets/Images/starFilled.svg";
 
 const InfoAccommadation = ({
   title,
@@ -40,7 +11,7 @@ const InfoAccommadation = ({
   picture,
   rating,
 }) => {
-  // RATING:
+  // RATING:----------------------------------------------------
   // transform string in number:
   const ratingNum = parseInt(rating);
 
@@ -52,7 +23,7 @@ const InfoAccommadation = ({
     { length: 5 - ratingNum },
     (_, i) => i + ratingNum
   );
-
+// -------------------------------------------------------------
   return (
     <section className="sectionInfo">
       <div className="info">

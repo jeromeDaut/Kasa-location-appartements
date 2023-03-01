@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import arrowUp from "../assets/Images/arrow_up.png";
-import arrowDown from "../assets/Images/arrow_down.png";
+import arrowUp from "../../assets/Images/arrow_up.png";
+import arrowDown from "../../assets/Images/arrow_down.png";
 
-const DropDown = ({ title, content, isList = false }) => {
-  const [isOpen, setIsOpen] = useState(true);
+const DropDown = ({ title, content, isList = false, open= false }) => {
+  // Using state to keep track of dropdown status (open or closed)
+  const [isOpen, setIsOpen] = useState(open);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -19,7 +20,7 @@ const DropDown = ({ title, content, isList = false }) => {
           <img src={arrowDown} alt="ouvert" />
         )}
       </div>
-      {/* {isOpen && <p className="dropDown__content">{paragraph}</p>} */}
+      {/* Displaying content of the dropdown if it is open */}
       {isList === true
         ? isOpen && <ul className="dropDown__content">{content}</ul>
         : isOpen && <p className="dropDown__content">{content}</p>}

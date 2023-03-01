@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/Images/LOGO.png";
-import Navigation from "./Navigation";
+import logo from "../../assets/Images/LOGO.png";
+import Navigation from "../navigation/Navigation";
 
 const Logo = () => {
   return (

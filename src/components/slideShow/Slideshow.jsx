@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { slidesList } from "../slidesList/logements";
-import arrowLeft from "../assets/Images/arrow_back.png";
-import arrowRight from "../assets/Images/arrow_right.png";
+import arrowLeft from "../../assets/Images/arrow_back.png";
+import arrowRight from "../../assets/Images/arrow_right.png";
 
 const Slideshow = ({ slidesList }) => {
   //Declare state variables for the current index
