@@ -1,16 +1,19 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import DropDown from "../components/DropDown";
-import InfoAccommadation from "../components/InfoAccommadation";
-// import Rating from "../components/Rating";
-import Slideshow from "../components/Slideshow";
+import { useLocation, useParams } from "react-router-dom";
+import DropDown from "../components/dropdown/DropDown";
+import InfoAccommadation from "../components/infoAccommodation/InfoAccommadation";
+import Slideshow from "../components/slideShow/Slideshow";
 
 const Accommodation = () => {
+  // Scroll to the top of the page on component
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+  // Get the current location and parameters from the URL using hooks
   const location = useLocation();
-  const data = location.state;
+  const params = useParams();
+  // Check if there is data in the location state, otherwise find the accommodation with the matching ID
+  const data = location.state ?? {logement : location.find((logements) =>logements.id === params.id)};
 
   let logement = null;
   let title = null;
@@ -22,7 +25,7 @@ const Accommodation = () => {
   let slides = [];
   let name = null;
   let picture = null;
-  console.log(rating);
+  
   try {
     logement = data.logement;
 
@@ -30,19 +33,18 @@ const Accommodation = () => {
     tags = logement.tags;
     logLocation = logement.location;
     description = logement.description;
-
+    slides = logement.pictures;
     rating = logement.rating;
-    console.log(rating);
-
     name = logement.host.name;
     picture = logement.host.picture;
 
+    // Map over the equipments and create a list of li elements
     equipments = logement.equipments.map((equi, index) => (
       <li key={index}>{equi}</li>
-    ));
-    slides = logement.pictures;
+      ));
+
   } catch (error) {
-    console.log("no state");
+    window.location.href = "/Erreur"
   }
   return (
     <main>
@@ -64,12 +66,14 @@ const Accommodation = () => {
           title="description"
           content={description}
           isList={false}
+          open ={true}
         />
         <DropDown
           key="1"
           title="equipements"
           content={equipments}
           isList={true}
+          open={true}
         />
       </section>
     </main>
