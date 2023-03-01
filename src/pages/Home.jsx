@@ -1,6 +1,6 @@
 import React from "react";
-import BannerImg from "../components/BannerImg";
-import Gallery from "../components/Gallery";
+import BannerImg from "../components/bannerImg/BannerImg";
+import Gallery from "../components/gallery/Gallery";
 
 const Home = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import BannerImg from "../components/BannerImg";
-import DropDown from "../components/DropDown";
+import BannerImg from "../components/bannerImg/BannerImg";
+import DropDown from "../components/dropdown/DropDown";
 
 import { dropDownData } from "../data/dropDownDataAbout";
 
