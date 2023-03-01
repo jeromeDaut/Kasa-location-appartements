@@ -4,8 +4,8 @@ import About from "./pages/About";
 import Accommodation from "./pages/Accommodation";
 import Home from "./pages/Home";
 import PageNotFound from "./pages/PageNotFound";
-import Footer from "../src/components/Footer";
-import Header from "../src/components/Header";
+import Footer from "../src/components/footer/Footer";
+import Header from "../src/components/header/Header";
 
 const App = () => {
   return (
