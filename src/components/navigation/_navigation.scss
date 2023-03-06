@@ -2,12 +2,13 @@
     display: flex;
     gap: 50px;
     font-size: 24px;
-    font-weight: 500px;
+    font-weight: bold;
     a{
         text-decoration: none;
         color: $color-primary;
         &.active{
             text-decoration: underline;
+            
         }
     }
 }
