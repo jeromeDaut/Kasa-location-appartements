@@ -63,14 +63,14 @@ const Accommodation = () => {
       <section className="dropDownAccommodation">
         <DropDown
           key="0"
-          title="description"
+          title="Description"
           content={description}
           isList={false}
           open ={true}
         />
         <DropDown
           key="1"
-          title="equipements"
+          title="Équipements"
           content={equipments}
           isList={true}
           open={true}
