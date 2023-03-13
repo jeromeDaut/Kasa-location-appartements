@@ -13,8 +13,7 @@ const Accommodation = () => {
   const location = useLocation();
   const params = useParams();
   // Check if there is data in the location state, otherwise find the accommodation with the matching ID
-  const data = location.state ?? {logement : location.find((logements) =>logements.id === params.id)};
-
+  
   let logement = null;
   let title = null;
   let tags = null;
@@ -27,6 +26,11 @@ const Accommodation = () => {
   let picture = null;
   
   try {
+    const data = location.state ?? {logement : location.find((logements) =>logements.id === params.id)};
+    if (!params.id) {
+      throw new Error("Invalid ID");
+    }
+
     logement = data.logement;
 
     title = logement.title;

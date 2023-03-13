@@ -16,12 +16,12 @@ const InfoAccommadation = ({
   const ratingNum = parseInt(rating);
 
   // Array with the number of stars corresponding to the rating
-  const filledStars = Array.from({ length: ratingNum }, (_, i) => i);
+  const filledStars = Array.from({ length: ratingNum }, (i) => i);
 
   // Array with the remaining stars
   const emptyStars = Array.from(
     { length: 5 - ratingNum },
-    (_, i) => i + ratingNum
+    (i) => i + ratingNum
   );
 // -------------------------------------------------------------
   return (
